@@ -1,12 +1,15 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-.minor-section {
+#content {
+    color: rgb(227, 163, 186);
     padding: 20px;
     margin-bottom: 15px;
-    border: solid 1px #814;
-    background-color: #ce2f2f;
+    border: 8px #814;
+    background-color: #ce2f5c;
+    font-size: larger;
+    font-family: cursive;
   }
 
 #kitten
-{ width: 80%; img }
+{ width: 70%; img }
