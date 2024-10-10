@@ -11,5 +11,14 @@
     font-family: cursive;
   }
 
-#kitten
-{ width: 70%; img }
+#kitten { 
+  width: 50%; img 
+}
+
+#Literallyme { 
+  width: 40%; img 
+}
+
+#playing {
+  width:55%; img
+}
