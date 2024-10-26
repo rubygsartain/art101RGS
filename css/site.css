@@ -3,14 +3,8 @@
 /* you can pick your own background colors, text colors, and fonts */
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
-body {
-  background-color: #ffffff;
-}
 
-/* we can have rules apply to multiple elements at the same time with commas */
-h1,h2,h3 {
-  font-family: sans-serif;
-}
+
 
 /* and we can have rules that overlap other rules, both take effect */
 h1 {
@@ -21,10 +15,14 @@ h1 {
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
-  margin: 10px;
-  padding: 10px;
-  border: solid 1px #ffffff;
-  background-color: #ffffff;
+  color: rgb(227, 163, 186);
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 8px #814;
+  background-color: rgb(255, 255, 255);
+  font-size: larger;
+  font-family: cursive;
+
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
