@@ -7,3 +7,11 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+
+  #document.writeln {
+    padding: 10px;
+    margin-bottom: 10px;
+    color: rgb(255, 23, 73);
+    font-size: 300%;
+  
+  }
