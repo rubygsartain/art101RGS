@@ -19,7 +19,6 @@ h1 {
   padding: 20px;
   margin-bottom: 15px;
   border: 8px #814;
-  background-color: rgb(255, 255, 255);
   font-size: larger;
   font-family: cursive;
   
@@ -30,6 +29,4 @@ h1 {
 .minor-section {
   padding: 10px;
   margin-bottom: 10px;
-  border: solid 1px #ffffff;
-  background-color: #ffffff;
 }

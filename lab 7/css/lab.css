@@ -15,3 +15,9 @@
     font-size: 300%;
   
   }
+
+  #output {
+    border: dotted rgb(255, 200, 0) 20px;
+    color: rgb(98, 186, 98);
+
+  }
