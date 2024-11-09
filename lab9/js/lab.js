@@ -10,31 +10,33 @@
 
 // button to challenge section
 
-$("#challenge").append("<button id='make-challenge-special'>Make Special</button>");
+$("#challenge").append("<button id='button-challenge'>Make special</button>");
 
 // add click listener
 
-$("#make-challenge-special").click(function(){
-console.log("click!");
-$("challenge").toggleClass("special");
+$("#button-challenge").click(function(){
+$("#challenge").toggleClass("special");
 });
 
 // add a button to problem section
 
-$("#problems").append("<button id='make-problem-special'>Make Special</button>");
+$("#problems").append("<button id='button-problems'>Make special</button>");
 
 // add a click listener
 
-$("#make-problem-special").click(function(){
+$("#button-problems").click(function(){
 $("#problems").toggleClass("special");
 });
 
 // button for results section
 
-$("#results").append("<button id='make-results-special'>Make Special</button>");
-$("#make-results-special").click(function(){
-$("#results").toggleClass("special")
-})
+$("#results").append("<button id='button-results'>Make special</button>");
+
+$("#button-results").click(function(){
+$("#results").toggleClass("special");
+});
+
+
 
 
 

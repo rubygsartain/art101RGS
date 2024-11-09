@@ -14,15 +14,18 @@
     padding: 10px;
     margin-bottom: 10px;
     border: solid 3px #9c9898;
-    background-color: clear;
+    background-color: lightslategray;
   }
   
   #content {
     color: skyblue;
+    background: lightslategray;
+    border: solid 3px #9c9898;
   }
 
 body {
   background-color: lightslategrey;
+  border: solid 3px #9c9898;
 }
 
 
@@ -31,10 +34,15 @@ body {
   border: dotted 10px skyblue;
 }
 
-.special {
-  color: red;
+
+
+button {
+  color:rgb(255, 23, 73);
+  background: darkgrey;
 }
 
-#problem {
-  color: skyblue;
-}
+.special {
+  color: rgb(255, 255, 187);
+  background-color: rgb(255, 162, 0);
+  border: dotted 4px yellow;
+  }
