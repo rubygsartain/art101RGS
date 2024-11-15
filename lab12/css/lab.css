@@ -93,6 +93,7 @@ a:hover {
     border-radius: 150px;
     border: solid 2px black;
     width: 500px;
+    color:rgb(255, 23, 73);
 }
 
 .hidden {

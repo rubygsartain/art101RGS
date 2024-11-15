@@ -36,7 +36,7 @@ else if (mod == 4) {
  var myButton = document.getElementById("button");
  myButton.addEventListener("click", function() {
     var name = document.getElementById("input").value;
-    var answer = sortingTruth(question);
-    newText = "<p> The universe holds: " + answer + "</p>";
+    var answer = sortingTruth(input);
+    return newText = "<p> The universe holds: " + answer + "</p>";
     document.getElementById("output").innerHTML = newText;
  })
