@@ -1,6 +1,6 @@
 /*
 
-// index.js - Lab 10
+// index.js - Lab 11
 // Author: Ruby Grossman-Sartain
 // Date: 11/016/24
 
