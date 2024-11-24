@@ -13,24 +13,21 @@
   .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 3px #9c9898;
   }
   
   #content {
-    color: skyblue;
-    border: solid 3px #9c9898;
-    background-color: lightslategray;
+    color: rgb(10, 32, 41);
+    background-color: rgb(70, 87, 103);
   }
 
 body {
-  background-color: lightslategrey;
-  border: solid 3px #9c9898;
+  background-color: rgb(95, 107, 118);
 }
 
 
 #results {
   color: pink;
-  border: dotted 10px skyblue;
+  border: dotted 10px rgb(58, 101, 118);
 }
 
 button {
@@ -53,68 +50,14 @@ h1, h2, h3 {
     height: auto !important;
 }
 
-a:hover {
-    text-decoration: underline;
-    text-decoration-style: dotted;
-}
-.linkbox {
-    padding: 10px;
-    font-size: 80%;
-}
-.homelink {
-    text-align: left;
-}
-.sourcelink {
-    float: right;
-}
-
-.output-box {
-    position: relative;
-}
-
-.hat-box {
-    float: right;
-    width: 400px;
-    height:200px;
-}
-
-#tail-box {
-    position: absolute;
-    top: 150px;
-    right: 252px;
-    width: 100px;
-    transform: scaleX(-1);;
-}
 
 #output {
-    position: absolute;
     right: 350px;
-    padding: 50px;
-    border-radius: 150px;
-    border: solid 2px black;
+    padding: 23px;
+    border-radius: 14px;
+    border: dotted 10px rgb(255, 231, 96);
     width: 500px;
-    color:rgb(255, 23, 73);
+    color:rgb(119, 13, 36);
+    text-align:center;
 }
 
-.hidden {
-    visibility: hidden;
-}
-
-.input-output {
-    border: solid 1px;
-    padding: 10px 10px 30px;
-}
-
-.stage-direction {
-    font-size: 80%;
-    margin-top: 20px;
-}
-
-.credits {
-    font-size: 60%;
-    color: gray;
-}
-.credits a {
-    text-decoration: inherit;
-    color: inherit;
-}
