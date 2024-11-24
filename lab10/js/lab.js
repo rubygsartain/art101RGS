@@ -2,16 +2,9 @@
 
 // index.js - Lab 10
 // Author: Ruby Grossman-Sartain
-// Date: 11/016/24
+// Date: 11/023/24
 
 */
-
-
-
-
-// functions
-
-// functions
 
 function generateRandomText() {
     const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
