@@ -6,48 +6,28 @@
 
 */
 
+// main.js
+
 function generateRandomText() {
-    const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+    const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
     
     const min = 3;
-    const max = Math.min(100, text.length); // Ensure max does not exceed text length
+    const max = Math.min(100, text.length);
     const randLen = Math.floor(Math.random() * (max - min + 1)) + min;
     
-    // Random starting index
     const randStart = Math.floor(Math.random() * (text.length - randLen + 1));
     
-    // Generate text
     return text.slice(randStart, randStart + randLen);
 }
 
-// Event listener
 $(document).ready(function() {
+    let isSender = true; // Flag to alternate between sender and receiver
     $("#lets-chat").click(function() {
-        // Generate new text when the button is clicked
         const newText = generateRandomText();
+        const messageClass = isSender ? 'sender' : 'receiver';
         
-        // New div with new text
-        $("#output").append(`<div class="text"><p>${newText}</p></div>`); // Using template literals
+        $("#output").append(`<div class="text ${messageClass}"><p>${newText}</p></div>`);
+        
+        isSender = !isSender; // Toggle the flag for the next message
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
