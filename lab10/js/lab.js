@@ -9,7 +9,7 @@
 // main.js
 
 function generateRandomText() {
-    const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+    const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. mama a girl behind YOU <3";
     
     const min = 3;
     const max = Math.min(100, text.length);
@@ -21,7 +21,7 @@ function generateRandomText() {
 }
 
 $(document).ready(function() {
-    let isSender = true; // Flag to alternate between sender and receiver
+    let isSender = true; // alternate between sender and receiver
     $("#lets-chat").click(function() {
         const newText = generateRandomText();
         const messageClass = isSender ? 'sender' : 'receiver';
