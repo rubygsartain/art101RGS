@@ -39,9 +39,13 @@
 .sender {
   text-align: right; 
   background-color: rgb(179, 208, 248); 
+  border-radius: 20px;
+  padding: 5px;
 }
 
 .receiver {
   text-align: left;
   background-color: #d1e7dd; 
+  border-radius: 20px;
+  padding: 5px;
 }
