@@ -18,8 +18,8 @@
   }
   
   #content {
-    color: rgb(10, 32, 41);
-    background-color: rgb(102, 124, 146);
+    color: rgb(41, 10, 10);
+    background-color: rgb(86, 91, 149);
   }
 
 body {
@@ -33,7 +33,7 @@ body {
 }
 
 button {
-  color:rgb(255, 23, 73);
+  color:rgb(27, 23, 255);
   background: darkgrey;
 }
 
@@ -45,6 +45,17 @@ h1, h2, h3 {
     width: 45% !important;
     height: auto !important;
 }
+
+#advice {
+  display: none; /* Initially hide the image */
+  position: absolute;
+  right: 20px; /* Position the image on the right */
+  top: 50px; /* Adjust vertical position */
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
  
 
 #output {
@@ -53,7 +64,20 @@ h1, h2, h3 {
     border-radius: 14px;
     border: dotted 10px rgb(255, 231, 96);
     width: 500px;
-    color:rgb(119, 13, 36);
+    color:rgb(255, 235, 239);
     text-align:center;
 }
+
+#image {
+  display: none; /* Initially hide the image */
+  position:absolute; /* Position the image absolutely */
+  right: 20px; /* Position it on the right */
+  bottom:0ch; /* Adjust vertical position */
+  border: 1px solid #ccc; /* Light gray border */
+  padding: 10px; /* Padding inside the container */
+  background-color: white; /* White background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  border-radius: 5px; /* Rounded corners */
+}
+
 
