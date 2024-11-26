@@ -19,7 +19,7 @@
   
   #content {
     color: rgb(41, 10, 10);
-    background-color: rgb(86, 91, 149);
+    background-color: rgb(106, 109, 148);
   }
 
 body {
@@ -33,7 +33,7 @@ body {
 }
 
 button {
-  color:rgb(27, 23, 255);
+  color:rgb(255, 23, 85);
   background: darkgrey;
 }
 
@@ -46,17 +46,6 @@ h1, h2, h3 {
     height: auto !important;
 }
 
-#advice {
-  display: none; /* Initially hide the image */
-  position: absolute;
-  right: 20px; /* Position the image on the right */
-  top: 50px; /* Adjust vertical position */
-  border: 1px solid #ccc;
-  padding: 10px;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
- 
 
 #output {
     right: 350px;
@@ -72,7 +61,7 @@ h1, h2, h3 {
   display: none; /* Initially hide the image */
   position:absolute; /* Position the image absolutely */
   right: 20px; /* Position it on the right */
-  bottom:0ch; /* Adjust vertical position */
+  bottom:auto; /* Adjust vertical position */
   border: 1px solid #ccc; /* Light gray border */
   padding: 10px; /* Padding inside the container */
   background-color: white; /* White background */
