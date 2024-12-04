@@ -47,7 +47,6 @@ myButton.addEventListener("click", function() {
     // Clear any existing timeout before setting a new one
     clearTimeout(clickTimeout);
 
-    // Show the current image immediately
     showImage(2000);
 
     // Set a timeout to change the image after 2 seconds
