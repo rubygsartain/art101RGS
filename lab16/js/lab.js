@@ -1,38 +1,31 @@
 // index.js - Lab 16
 // Author: Ruby Grossman-Sartain
-// Date: 12/3/24
+// Date: 12/15/24
 
+let endpoint = "https://api.nasa.gov/planetary/apod";
 
-// index.js - Lab 16
-// Author: Ruby Grossman-Sartain
-// Date: 12/3/24
+// configure ajax request
+let ajaxConfig = {
+    url: endpoint,
+    method: "GET",
+    dataType: "json",
+    data: {
+        api_key: "njxUNBBITfn7v9re7H7AMgwQcRn7b2dJ8oJF8ULh"
+    },
+    success: function(data) {
+        // No need to access data[0] since the response is a single object
+        let record = data;
+        $("#yay output").append("<h2>" + record.title + "</h2>");
+        $("#yay output").append("<img src='" + record.url + "' alt='" + record.title + "'>");
+        $("#yay output").append("<p>" + record.explanation + "</p>");
+    },
+    error: function(xhr, status, error) {
+        console.error(error);
+    }
+};
 
-$(document).ready(function() {
-    $.ajax({
-        // The URL for the request (from the API docs)
-        url: "https://xkcd.com/info.0.json", // Corrected to the actual endpoint for the xkcd API
-        // The data to send (will be converted to a query string)
-        // No need to send id or api_key for this specific API
-        // If you need to send parameters, you can add them here
-        // data: { id: 123 }, // Example if needed
+// Append initial message
+$("#yay output").append("<h1>yay</h1>");
 
-        // Whether this is a POST or GET request
-        type: "GET",
-        // The type of data we expect back
-        dataType: "json",
-        // What do we do when the API call is successful
-        success: function(data) {
-            // Do stuff with the data
-            console.log(data);
-            // You can also display the data on the webpage
-            $('#content').append(`<h3>${data.title}</h3><img src="${data.img}" alt="${data.alt}">`);
-        },
-        // What we do if the API call fails
-        error: function(jqXHR, textStatus, errorThrown) { 
-            // Do stuff
-            console.log("Error:", textStatus, errorThrown);
-        }
-    });
-});
-
-
+// send ajax request
+$.ajax(ajaxConfig);
