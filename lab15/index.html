@@ -4,79 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="./js/lab.js" DEFER></script>
-
-	
-<link rel="stylesheet" type="text/css" href="../css/site.css">
-<link rel="stylesheet" type="text/css" href="css/lab.css">
-
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="./js/lab.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="../css/site.css">
+    <link rel="stylesheet" type="text/css" href="./css/lab.css">
+    <title>AJAX JSON Output</title>
 </head>
 
-
-<button id="activate">activate</button>
-    <div id="output"></div></button>
-
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>AJAX JSON Output</title>
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	</head>
-	<body>
-		<button id="get-data">Get JSON Data</button>
-		<div id="output"></div>
-	
-		<script>
-			$(document).ready(() => {
-				$('#get-data').on('click', function() {
-					$.ajax({
-						url: "https://yourapiendpoint.com/", // Replace with your actual API endpoint
-						type: "GET",
-						dataType: "json",
-						success: function(data) {
-							// Assuming data is an array of objects
-							const outputDiv = $('#output');
-							outputDiv.empty(); // Clear previous output
-	
-							// Parse and display the JSON data
-							data.items.forEach(item => {
-								outputDiv.append(`<p>${item.key}: ${item.value}</p>`);
-							});
-						},
-						error: function(jqXHR, textStatus, errorThrown) {
-							console.log("Error:", textStatus, errorThrown);
-						}
-					});
-				});
-			});
-		</script>
-	</body>
-	</html>
-
 <body>
-	<div id="content">
-		<h1>Lab 15: AJAX</h1>
-		<h2>Challenge</h2>
-		Experiment with Jquery and AJAX
-		<h2>Problems</h2>
-		<p>Not yet functioning, I need to watch more tutorials.  </p>
-		<h2> Results</h2>
-		<p>Not there yet. </p>
+    <div id="content">
+        <h1>Lab 15: AJAX</h1>
+        <h2>Challenge</h2>
+        Experiment with Jquery and AJAX
+        <h2>Problems</h2>
+        <p>Works now!</p>
 
-</div>
+        <h2>Results</h2>
+        <p>Positive ^_^</p>
+
+        <button id="Activate">Go!</button>
+        <div id="output"></div>
+    </div>
+
+    <p></p>
+    <p></p>
+    <!-- Put links to other pages (including the homepage) here. -->
+    <li><a href="https://rubygsartain.github.io/art101RGS">Homepage</a></li>
 </body>
+
 </html>
-
-	<p></p>
-	<p></p>
-<!-- Put links to other pages (including the homepage) here. -->
-<li><a href=https://rubygsartain.github.io/art101RGS>Homepage </a></li>
-
-</div>
-
-
-hiii
-
